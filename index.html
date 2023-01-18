@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="./css/base/variable.css">
+  <link rel="stylesheet" href="./css/base/reset.css">
+  <link rel="stylesheet" href="./css/base/base.css">
+
+  <link rel="stylesheet" href="./css/card.css">
+
+</head>
+<body>
+  <header class="header">
+    <img src="./images/logo.svg" alt="Splitter Logo">
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="card__input">
+        <div class="card__input__bill">
+          <label class="bill__title">Bill</label>
+          <div class="bill__input">
+            <div class="bill__icon__dollar">
+              <img src="./images/icon-dollar.svg" alt="Dollar Icon">
+            </div>
+            <input class="bill__number" type="number" placeholder="0">
+          </div>
+        </div>
+        <div class="card__input__percent">
+          <p class="percent__title">Select Tip %</p>
+          <div class="percent__buttons">
+            <button class="percent__btn">5%</button>
+            <button class="percent__btn">10%</button>
+            <button class="percent__btn">15%</button>
+            <button class="percent__btn">25%</button>
+            <button class="percent__btn">50%</button>
+            <input class="percent__custom" type="number" placeholder="Custom">
+          </div>
+        </div>
+        <div class="card__input__people">
+          <label class="bill__title">Number of People</label>
+          <div class="bill__input">
+            <div class="bill__icon__dollar">
+              <img src="./images/icon-person.svg" alt="Dollar Icon">
+            </div>
+            <input class="bill__number" type="number" placeholder="0">
+          </div>
+        </div>
+      </div>
+      <div class="card__result">
+        <div class="results">
+          <div id="result__tip" class="result">
+            <div class="result__description">
+              <p class="result__title">Tip Amount</p>
+              <p class="result__person">/ person</p>
+            </div>
+            <p class="result__price">$0.00</p>
+          </div>
+  
+          <div id="result__total" class="result">
+            <div class="result__description">
+              <p class="result__title">Total</p>
+              <p class="result__person">/ person</p>
+            </div>
+            <p class="result__price">$0.00</p>
+          </div>
+        </div>
+        <button class="btn__reset">Reset</button>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>

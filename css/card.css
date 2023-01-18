@@ -1,0 +1,268 @@
+
+.card{
+    align-items: center;
+    background: var(--white);
+    border-radius: 1rem;
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    margin: 3rem 0;
+    padding: 3rem;
+}
+
+.card__input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__input__bill{
+    color: var(--dark-grayish-cyan);
+    display: flex;
+    flex-direction: column;
+}
+.bill__input{
+    align-items: center;
+    display: flex;
+    margin: 4px 0;
+}
+
+.bill__title, .percent__title{
+    color: var(--dark-grayish-cyan);
+    margin-bottom: 8px;
+}
+
+.bill__icon__dollar{
+    align-items: center;
+    background: var(--very-light-grayish-cyan);
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    padding-left: 0.8rem;
+}
+
+.bill__number{
+    background: var(--very-light-grayish-cyan);
+    border: none;
+    color: var(--very-dark-cyan);
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2rem;
+    height: 2rem;
+    outline: none;
+    text-align: right;
+    padding: 0 0.5rem;
+    width: 250px;
+}
+
+.bill__number::placeholder{
+    color: var(--light-grayish-cyan);
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2em;
+    text-align: end;
+}
+
+
+.percent__buttons{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.percent__btn{
+    background: var(--very-dark-cyan);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1em;
+    height: 2rem;
+    margin: 0.3rem 0 0.3rem 0;
+    width: 90px;
+}
+
+.percent__btn:hover{
+    background: var(--light-strong-cyan);
+    color: var(--very-dark-cyan);
+    transition: 0.2s;
+}
+
+.percent__btn:active{
+    background:var(--strong-cyan);
+}
+
+.percent__custom{
+    background: var(--very-light-grayish-cyan);
+    border: none;
+    border-radius: 5px;
+    color: var(--very-dark-cyan);
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1em;
+    height: 2rem;
+    text-align: center;
+    outline: none;
+    width: 90px;
+}
+
+.percent__custom::placeholder{
+    color: var(--grayish-cyan);
+}
+
+.percent__custom:focus{
+    border: 2px solid var(--strong-cyan);
+}
+
+.card__result{
+    background: var(--very-dark-cyan);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    margin-left: 2rem;
+    width: 280px;
+}
+
+.result{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 1.2rem;
+}
+
+.result__title{
+    color: var(--very-light-grayish-cyan);
+    font-size: 0.8rem;
+    
+}
+
+.result__person{
+    color: var(--grayish-cyan);
+    font-size: 0.7rem;
+    margin-top: 3px;
+}
+
+.result__price{
+    color: var(--strong-cyan);
+    font-size: 2rem;
+}
+
+.btn__reset{
+    align-self: center;
+    background: var(--strong-cyan);
+    border: none;
+    border-radius: 5px;
+    color: var(--very-dark-cyan);
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    height: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    width: 85%;
+}
+
+.btn__reset:hover{
+    background: var(--light-strong-cyan);
+    transition: 0.2s;
+}
+
+.attribution{
+    color: var(--dark-grayish-cyan);
+}
+
+.attribution a{
+    color: var(--very-dark-cyan);
+    text-decoration: underline;
+}
+
+.attribution a:hover{
+    color: var(--dark-grayish-cyan);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header{
+        margin-top: 350px;
+        margin-bottom: 30px;
+    }
+    .card{
+        flex-direction: column;
+        height: auto;
+        margin: 0;
+        padding: 3rem;
+        
+    }
+
+    .bill__number{
+        width: 100%;
+    }
+
+    .percent__buttons{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .percent__btn{
+        width: 95%;
+    }
+
+    .percent__custom{
+        width: 90%;
+    }
+
+    .card__result{
+        margin-top: 2rem;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .attribution{
+        margin: 30px 10px;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+    .header{
+        margin-top: 350px;
+        margin-bottom: 30px;
+    }
+    .card{
+        flex-direction: column;
+        height: auto;
+        margin: 0;
+        padding: 3rem;
+    }
+
+    .bill__number{
+        width: 100%;
+    }
+
+    .percent__buttons{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .percent__btn{
+        width: 95%;
+    }
+
+    .percent__custom{
+        width: 90%;
+    }
+
+    .card__result{
+        margin-top: 2rem;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .attribution{
+        margin: 30px 10px;
+        text-align: center;
+    }
+}
