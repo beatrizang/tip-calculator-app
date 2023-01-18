@@ -31,7 +31,7 @@ Users should be able to:
 
 - Mobile
 
-![](./images/screen/1.png)
+![](./images/screen/2.png)
 
 
 ### Links
