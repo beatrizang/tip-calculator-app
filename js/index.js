@@ -4,11 +4,26 @@ document.getElementById("people").addEventListener("keyup",getPeople);
 document.getElementById("percent__custom").addEventListener("keyup",getCustom);
 document.getElementById("btn__reset").addEventListener("click",reset);
 
+const botones = document.querySelectorAll(".percent__btn");
+
 
 let bill = 0;
 let tipPercent = 0;
 let people = 0;
 
+const cambiaColor = function (evento){
+    console.log("El procentaje de este boton es: ", this.innertext);
+    botones.forEach(boton => {
+        boton.style.background = "var(--very-dark-cyan)";
+        
+    });
+    this.style.background = "var(--strong-cyan)";
+}
+
+botones.forEach(boton => {
+	//Agregar listener
+	boton.addEventListener("click", cambiaColor);
+});
 
 function getBill(){
     bill = document.getElementById("bill").value;
@@ -17,7 +32,6 @@ function getBill(){
 
 function tip(percent){
     tipPercent = percent;
-    console.log(document.querySelector("percent__btn"));
     tipAmountPerson(); 
 }
 
