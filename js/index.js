@@ -17,6 +17,7 @@ function getBill(){
 
 function tip(percent){
     tipPercent = percent;
+    console.log(document.querySelector("percent__btn"));
     tipAmountPerson(); 
 }
 
