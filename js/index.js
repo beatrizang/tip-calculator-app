@@ -15,7 +15,6 @@ const cambiaColor = function (evento){
     console.log("El procentaje de este boton es: ", this.innertext);
     botones.forEach(boton => {
         boton.style.background = "var(--very-dark-cyan)";
-        
     });
     this.style.background = "var(--strong-cyan)";
 }
@@ -70,6 +69,10 @@ function reset(){
     bill = 0;
     tipPercent = 0;
     people = 0;
+
+    botones.forEach(boton => {
+        boton.style.background = "var(--very-dark-cyan)";
+    });
 
     document.getElementById("result__tip").innerHTML = '$' + num.toFixed(2);
     document.getElementById("result__total").innerHTML = '$' + num.toFixed(2);
