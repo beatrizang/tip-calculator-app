@@ -112,6 +112,24 @@
     border: 2px solid var(--strong-cyan);
 }
 
+.card__input__label{
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bill__text__error{
+    color: var(--red);
+    display: none;
+    font-size: 0.7em;
+    margin-bottom: 8px;
+}
+
+#bill__input__error{
+    border: 0.15rem solid transparent;
+    border-radius: 4px;
+}
+
 .card__result{
     background: var(--very-dark-cyan);
     border-radius: 0.5rem;

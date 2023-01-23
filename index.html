@@ -29,49 +29,52 @@
             <div class="bill__icon__dollar">
               <img src="./images/icon-dollar.svg" alt="Dollar Icon">
             </div>
-            <input class="bill__number" type="number" placeholder="0">
+            <input id="bill" class="bill__number" type="number" placeholder="0">
           </div>
         </div>
         <div class="card__input__percent">
           <p class="percent__title">Select Tip %</p>
           <div class="percent__buttons">
-            <button class="percent__btn">5%</button>
-            <button class="percent__btn">10%</button>
-            <button class="percent__btn">15%</button>
-            <button class="percent__btn">25%</button>
-            <button class="percent__btn">50%</button>
-            <input class="percent__custom" type="number" placeholder="Custom">
+            <button onclick="tip(5)" class="percent__btn">5%</button>
+            <button onclick="tip(10)" class="percent__btn">10%</button>
+            <button onclick="tip(15)" class="percent__btn">15%</button>
+            <button onclick="tip(25)" class="percent__btn">25%</button>
+            <button onclick="tip(50)" class="percent__btn">50%</button>
+            <input id="percent__custom" class="percent__custom" type="number" placeholder="Custom">
           </div>
         </div>
         <div class="card__input__people">
-          <label class="bill__title">Number of People</label>
-          <div class="bill__input">
+          <div class="card__input__label">
+            <label class="bill__title">Number of People</label>
+            <p id="bill__text__error">Can't be zero</p>
+          </div>
+          <div id="bill__input__error" class="bill__input">
             <div class="bill__icon__dollar">
               <img src="./images/icon-person.svg" alt="Dollar Icon">
             </div>
-            <input class="bill__number" type="number" placeholder="0">
+            <input id="people" class="bill__number" type="number" placeholder="0">
           </div>
         </div>
       </div>
       <div class="card__result">
         <div class="results">
-          <div id="result__tip" class="result">
+          <div class="result">
             <div class="result__description">
               <p class="result__title">Tip Amount</p>
               <p class="result__person">/ person</p>
             </div>
-            <p class="result__price">$0.00</p>
+            <p id="result__tip" class="result__price">$0.00</p>
           </div>
   
-          <div id="result__total" class="result">
+          <div class="result">
             <div class="result__description">
               <p class="result__title">Total</p>
               <p class="result__person">/ person</p>
             </div>
-            <p class="result__price">$0.00</p>
+            <p id="result__total" class="result__price">$0.00</p>
           </div>
         </div>
-        <button class="btn__reset">Reset</button>
+        <button id="btn__reset" class="btn__reset">Reset</button>
       </div>
     </div>
   </main>
@@ -80,5 +83,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a target="_blank" href="https://github.com/beatrizang">Beatriz</a>.
   </footer>
+  <script src="./js/index.js"></script>
 </body>
 </html>
