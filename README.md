@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://tinyurl.com/r5mff38w
 - Live Site URL: https://earnest-chebakia-e15238.netlify.app/
 
 ## My process
@@ -50,6 +50,6 @@ Users should be able to:
 
 ## Author
  
-- Frontend Mentor -
+- Frontend Mentor - https://www.frontendmentor.io/profile/beatrizang
 
 
